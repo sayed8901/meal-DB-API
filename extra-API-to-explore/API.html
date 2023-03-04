@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON-API</title>
+    <style>
+        .post{
+            background-color: skyblue;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Display All Posts</h1>
+    </header>
+    <main>
+        <button onclick="loadData()">click me to add 500 comments!</button>
+        <button onclick="loadUsers()">click me to add 10 user names!</button>
+
+        <div class="users-container">
+            <ul id="users-list">
+            </ul>
+        </div>
+
+        <section>
+            <h2>All posts loaded via API</h2>
+            <div id="post-container">
+            </div>
+        </section>
+
+        <section>
+            <h2>All comments loaded via API</h2>
+            <div id="comment-container">
+            </div>
+        </section>
+    </main>
+
+    <!-- js file -->
+    <script src="/extra-API-to-explore/api-json.js"></script>
+</body>
+</html>

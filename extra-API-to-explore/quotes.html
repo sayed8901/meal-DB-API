@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <style>
+        #all-countries{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+        .country{
+            border: 2px solid crimson;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 15px;
+        }
+
+        .grid-layout{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- quotes, random user & countries API -->
+    <!-- quotes part -->
+    <h1>Famous Quotes!</h1>
+    <button onclick="loadQuote()">next quote</button>
+    <blockquote id="quotes"></blockquote>
+    <!-- <button onclick="loadUser()">add all user by clicking</button> -->
+    
+    <button onclick="loadUser2()">show user</button>
+    <div class="grid-layout">
+        <!-- user part -->
+        <div id="random-user">
+            <h3>name: <span id="user-name"></span></h3>
+            <p>gender: <span id="gender"></span></p>
+            <p>email: <span id="mail"></span></p>
+            <p>contact #: <span id="phone"></span></p>
+            <img id="image" src="" alt="">
+        </div>
+        <!-- countries info part -->
+        <div>
+            <h2 style="text-align: center;">All Countries</h2>
+            <section id="country-detail">
+            </section>
+        </div>
+    </div>
+    <div id="all-countries">
+    </div>
+
+    <!-- js fils -->
+    <script src="/extra-API-to-explore/quotes.js"></script>
+</body>
+</html>
